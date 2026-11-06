@@ -1,0 +1,650 @@
+{
+  "suite": "assistant",
+  "model": "qwen3:8b",
+  "generated_at": "2026-11-05T18:13:03+05:30",
+  "summary": {
+    "questions": 32,
+    "tool_selection_accuracy": 1.0,
+    "answer_correctness": 0.929,
+    "grounding_first_try_rate": 0.906,
+    "grounding_pass_rate": 0.938,
+    "fallback_rate": 0.062,
+    "unanswerable_handling": 1.0,
+    "median_latency_ms": 37194.5,
+    "p90_latency_ms": 58302
+  },
+  "results": [
+    {
+      "id": "lookup-return",
+      "category": "lookup",
+      "question": "What was the mean test return of PPO with indicator features on NVDA?",
+      "answer": "The mean test return of PPO with indicator features on NVDA was 25.83%.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 26476,
+      "grounding_problems": [],
+      "expected_values": [
+        "25.83"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-sharpe",
+      "category": "lookup",
+      "question": "What is the average Sharpe ratio of DQN with standard features on AMD in the test period?",
+      "answer": "The average Sharpe ratio of DQN with standard features on AMD in the test period is 0.86.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 19152,
+      "grounding_problems": [],
+      "expected_values": [
+        "0.86"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-trades",
+      "category": "lookup",
+      "question": "On average, how many trades did A2C with indicators make on INTC during the test period?",
+      "answer": "On average, A2C with indicators made 13.2 trades on INTC during the test period.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 19453,
+      "grounding_problems": [],
+      "expected_values": [
+        "13.2"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-drawdown",
+      "category": "lookup",
+      "question": "What was the mean maximum drawdown of PPO with standard features on AMD?",
+      "answer": "The mean maximum drawdown of PPO with standard features on AMD was 29.7%.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 20111,
+      "grounding_problems": [],
+      "expected_values": [
+        "29.7"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-exposure",
+      "category": "lookup",
+      "question": "What share of the test period was A2C with standard features on NVDA holding the stock?",
+      "answer": "A2C with standard features on NVDA held the stock 79.92% of the test period on average.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 23881,
+      "grounding_problems": [],
+      "expected_values": [
+        "79.92"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-spread",
+      "category": "lookup",
+      "question": "How much did test returns vary across seeds for PPO with indicators on INTC? Give the standard deviation.",
+      "answer": "The standard deviation of test returns for PPO with indicators on INTC across seeds is 71.28%.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 28778,
+      "grounding_problems": [],
+      "expected_values": [
+        "71.28"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-best-seed",
+      "category": "lookup",
+      "question": "What was the best single-seed test return for DQN with standard features on INTC?",
+      "answer": "The best single-seed test return for DQN with standard features on INTC was 76.13%.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 43802,
+      "grounding_problems": [],
+      "expected_values": [
+        "76.13"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "lookup-forward",
+      "category": "lookup",
+      "question": "How has PPO with standard features on NVDA performed since training, in the forward period?",
+      "answer": "PPO with standard features on NVDA achieved a mean total return of 6.65% in the forward period, with a maximum drawdown of 19.3% and a buy-and-hold return of 6.01%.",
+      "tools_called": [
+        "get_metrics"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 46023,
+      "grounding_problems": [],
+      "expected_values": [
+        "6.65"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-drawdown-nvda",
+      "category": "ranking",
+      "question": "Which strategy had the lowest drawdown on NVDA?",
+      "answer": "The A2C strategy with the standard feature set on NVDA had the lowest drawdown of 29.5% during the test period.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 38022,
+      "grounding_problems": [],
+      "expected_values": [
+        "A2C",
+        "standard"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-return-all",
+      "category": "ranking",
+      "question": "Which strategy had the highest mean test return across all tickers?",
+      "answer": "The strategy with the highest mean test return was INTC using PPO with indicators, achieving 73.09%.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 58302,
+      "grounding_problems": [],
+      "expected_values": [
+        "INTC",
+        "PPO",
+        "indicators"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-sharpe-amd",
+      "category": "ranking",
+      "question": "Rank the strategies on AMD by Sharpe ratio. Which one comes first?",
+      "answer": "The best strategy for AMD by Sharpe ratio is PPO with indicators features in the test period, with a mean Sharpe ratio of 1.39.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 33924,
+      "grounding_problems": [],
+      "expected_values": [
+        "PPO",
+        "indicators"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-winrate-intc",
+      "category": "ranking",
+      "question": "Which strategy had the highest win rate on INTC?",
+      "answer": "The A2C strategy with the standard feature set on INTC had the highest win rate during the test period.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 32665,
+      "grounding_problems": [],
+      "expected_values": [
+        "A2C",
+        "standard"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-excess-nvda",
+      "category": "ranking",
+      "question": "Which strategy came closest to, or furthest above, buy-and-hold on NVDA?",
+      "answer": "The DQN (standard) strategy on NVDA came closest to, or furthest above, buy-and-hold with an excess return of 2.66%.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 46740,
+      "grounding_problems": [],
+      "expected_values": [
+        "DQN",
+        "standard"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-worst-intc",
+      "category": "ranking",
+      "question": "Which strategy had the worst mean test return on INTC?",
+      "answer": "The strategy with the worst mean test return on INTC was PPO with standard features, achieving a mean total return of 9.4%.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 36275,
+      "grounding_problems": [],
+      "expected_values": [
+        "PPO",
+        "standard"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "rank-sharpe-all",
+      "category": "ranking",
+      "question": "Across every ticker, which algorithm and feature set had the highest Sharpe ratio?",
+      "answer": "The PPO algorithm with the indicators feature set on INTC had the highest Sharpe ratio of 1.69 during the test period.",
+      "tools_called": [
+        "rank_strategies"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 48202,
+      "grounding_problems": [],
+      "expected_values": [
+        "PPO",
+        "indicators"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-nvda",
+      "category": "baseline",
+      "question": "What did buy-and-hold return on NVDA in the test period, and did any strategy beat it?",
+      "answer": "The buy-and-hold return on NVDA in the test period was 34.61%, and no strategy beat it.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 50886,
+      "grounding_problems": [],
+      "expected_values": [
+        "34.61"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-ppo-amd",
+      "category": "baseline",
+      "question": "How did PPO with indicators on AMD compare with buy-and-hold?",
+      "answer": "PPO with indicators on AMD underperformed buy-and-hold during the test period.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 42319,
+      "grounding_problems": [],
+      "expected_values": [
+        "55.37"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-ci-intc",
+      "category": "baseline",
+      "question": "What is the confidence interval for DQN with standard features' excess return over buy-and-hold on INTC?",
+      "answer": "The 95% confidence interval for DQN with standard features' excess return over buy-and-hold on INTC during the test period is between -60.08% and 27.17%.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 39740,
+      "grounding_problems": [],
+      "expected_values": [
+        "27.17"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-seeds-nvda",
+      "category": "baseline",
+      "question": "How many seeds of A2C with indicators beat buy-and-hold on NVDA in the test period?",
+      "answer": "I could not write a summary whose numbers all match the stored results, so here are the raw results from the tools I called.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 2,
+      "grounded_first_try": false,
+      "grounded": false,
+      "used_fallback": true,
+      "latency_ms": 39274,
+      "grounding_problems": [
+        "claim 'Number of seeds beating buy-and-hold' = 0 is not in the output of compare_to_baseline"
+      ],
+      "expected_values": [
+        "1"
+      ],
+      "tool_correct": true,
+      "answer_correct": false
+    },
+    {
+      "id": "baseline-intc-2025",
+      "category": "baseline",
+      "question": "What return did buy-and-hold make on INTC in the test period?",
+      "answer": "Buy-and-hold made an 82.13% return on INTC in the test period.",
+      "tools_called": [
+        "get_metrics",
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 50720,
+      "grounding_problems": [],
+      "expected_values": [
+        "82.13"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-dqn-amd",
+      "category": "baseline",
+      "question": "Compare both DQN strategies on AMD with buy-and-hold. Which feature set did better?",
+      "answer": "The DQN strategy on AMD with the 'indicators' feature set underperformed compared to buy-and-hold, while the 'standard' feature set also underperformed. Neither beat buy-and-hold.",
+      "tools_called": [
+        "compare_to_baseline",
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 81041,
+      "grounding_problems": [],
+      "expected_values": [
+        "standard"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "baseline-ppo-intc",
+      "category": "baseline",
+      "question": "Did PPO with standard features beat buy-and-hold on INTC? What was its excess return?",
+      "answer": "PPO with standard features did not beat buy-and-hold on INTC during the test period. Its excess return was -39.93%.",
+      "tools_called": [
+        "compare_to_baseline"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 34607,
+      "grounding_problems": [],
+      "expected_values": [
+        "-39.93"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "equity-final-nvda",
+      "category": "equity_curve",
+      "question": "What was the seed-averaged equity of PPO with indicators on NVDA at the end of the test period?",
+      "answer": "The seed-averaged equity of PPO with indicators on NVDA at the end of the test period was 1.2583.",
+      "tools_called": [
+        "get_equity_curve"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 60608,
+      "grounding_problems": [],
+      "expected_values": [
+        "1.2583"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "equity-baseline-amd",
+      "category": "equity_curve",
+      "question": "Show the equity curve of A2C with standard features on AMD against buy-and-hold. Where did buy-and-hold's equity end?",
+      "answer": "The equity curve of A2C with standard features on AMD shows buy-and-hold's equity ending at 1.7718.",
+      "tools_called": [
+        "get_equity_curve"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 67501,
+      "grounding_problems": [],
+      "expected_values": [
+        "1.7718"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "freshness-latest",
+      "category": "freshness",
+      "question": "How recent is the price data?",
+      "answer": "The price data is up to 2026-11-04, with the latest price refresh on 2026-11-05.",
+      "tools_called": [
+        "data_freshness"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 54967,
+      "grounding_problems": [],
+      "expected_values": [
+        "2026-11-04"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "freshness-train-end",
+      "category": "freshness",
+      "question": "When does the training data for the agents end?",
+      "answer": "The training data for the agents ends on 2024-12-31.",
+      "tools_called": [
+        "data_freshness"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 30663,
+      "grounding_problems": [],
+      "expected_values": [
+        "2024-12-31"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "freshness-forward-end",
+      "category": "freshness",
+      "question": "What is the last day covered by the forward test?",
+      "answer": "The last day covered by the forward test is 2026-11-04.",
+      "tools_called": [
+        "data_freshness"
+      ],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 32768,
+      "grounding_problems": [],
+      "expected_values": [
+        "2026-11-04"
+      ],
+      "tool_correct": true,
+      "answer_correct": true
+    },
+    {
+      "id": "catalog",
+      "category": "catalog",
+      "question": "Which tickers and algorithms have results?",
+      "answer": "I could not write a summary whose numbers all match the stored results, so here are the raw results from the tools I called.",
+      "tools_called": [
+        "list_strategies"
+      ],
+      "attempts": 2,
+      "grounded_first_try": false,
+      "grounded": false,
+      "used_fallback": true,
+      "latency_ms": 68926,
+      "grounding_problems": [
+        "claim 'Tickers' = AMD, INTC, NVDA is not in the output of list_strategies",
+        "claim 'Algorithms' = A20C, DQN, PPO is not in the output of list_strategies",
+        "claim 'Feature sets' = indicators, standard is not in the output of list_strategies"
+      ],
+      "expected_values": [
+        "A2C DQN PPO"
+      ],
+      "tool_correct": true,
+      "answer_correct": false
+    },
+    {
+      "id": "unanswerable-forecast",
+      "category": "unanswerable",
+      "question": "What will NVDA's closing price be next week?",
+      "answer": "The stored results cannot predict future prices.",
+      "tools_called": [],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 16546,
+      "grounding_problems": [],
+      "handled_unanswerable": true
+    },
+    {
+      "id": "unanswerable-other-algorithm",
+      "category": "unanswerable",
+      "question": "How did the SAC algorithm do on TSLA?",
+      "answer": "The SAC algorithm on TSLA is not covered in the stored results.",
+      "tools_called": [],
+      "attempts": 2,
+      "grounded_first_try": false,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 36367,
+      "grounding_problems": [],
+      "handled_unanswerable": true
+    },
+    {
+      "id": "unanswerable-advice",
+      "category": "unanswerable",
+      "question": "Should I buy AMD stock right now?",
+      "answer": "The stored results cannot answer the question.",
+      "tools_called": [],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 21564,
+      "grounding_problems": [],
+      "handled_unanswerable": true
+    },
+    {
+      "id": "unanswerable-old-period",
+      "category": "unanswerable",
+      "question": "What was PPO's return on Apple stock in 2019?",
+      "answer": "The stored results cannot answer the question.",
+      "tools_called": [],
+      "attempts": 1,
+      "grounded_first_try": true,
+      "grounded": true,
+      "used_fallback": false,
+      "latency_ms": 23075,
+      "grounding_problems": [],
+      "handled_unanswerable": true
+    }
+  ]
+}

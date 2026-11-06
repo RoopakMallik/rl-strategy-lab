@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+data/models/
+web/node_modules/
+web/.next/
+.DS_Store
+web/out/
+web/.vercel/
+*.tsbuildinfo

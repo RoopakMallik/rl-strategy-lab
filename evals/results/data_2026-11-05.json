@@ -1,0 +1,172 @@
+{
+  "suite": "data",
+  "generated_at": "2026-11-05T12:56:07",
+  "passed": 23,
+  "total": 23,
+  "checks": [
+    {
+      "ticker": "NVDA",
+      "check": "rows per year about 252",
+      "passed": true,
+      "expected": "240-256",
+      "observed": 251.6
+    },
+    {
+      "ticker": "NVDA",
+      "check": "starts at START_DATE",
+      "passed": true,
+      "expected": "<= 2021-01-01 + 7 days",
+      "observed": "2021-01-04"
+    },
+    {
+      "ticker": "NVDA",
+      "check": "no missing trading days",
+      "passed": true,
+      "expected": "max gap <= 4 calendar days",
+      "observed": 4
+    },
+    {
+      "ticker": "NVDA",
+      "check": "low <= open,close <= high",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "NVDA",
+      "check": "prices positive",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "NVDA",
+      "check": "split-adjusted (no >40% daily move)",
+      "passed": true,
+      "expected": "< 40%",
+      "observed": "24.4%"
+    },
+    {
+      "ticker": "NVDA",
+      "check": "known close on 2025-01-02",
+      "passed": true,
+      "expected": "138.3 +/- 2%",
+      "observed": 137.95
+    },
+    {
+      "ticker": "NVDA",
+      "check": "known close on 2025-01-07",
+      "passed": true,
+      "expected": "140.1 +/- 2%",
+      "observed": 139.77
+    },
+    {
+      "ticker": "NVDA",
+      "check": "Open/Close not swapped (2025-01-07)",
+      "passed": true,
+      "expected": "open > close by > 5%",
+      "observed": {
+        "open": 152.63,
+        "close": 139.77
+      }
+    },
+    {
+      "ticker": "AMD",
+      "check": "rows per year about 252",
+      "passed": true,
+      "expected": "240-256",
+      "observed": 251.6
+    },
+    {
+      "ticker": "AMD",
+      "check": "starts at START_DATE",
+      "passed": true,
+      "expected": "<= 2021-01-01 + 7 days",
+      "observed": "2021-01-04"
+    },
+    {
+      "ticker": "AMD",
+      "check": "no missing trading days",
+      "passed": true,
+      "expected": "max gap <= 4 calendar days",
+      "observed": 4
+    },
+    {
+      "ticker": "AMD",
+      "check": "low <= open,close <= high",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "AMD",
+      "check": "prices positive",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "AMD",
+      "check": "split-adjusted (no >40% daily move)",
+      "passed": true,
+      "expected": "< 40%",
+      "observed": "23.8%"
+    },
+    {
+      "ticker": "AMD",
+      "check": "known close on 2025-01-02",
+      "passed": true,
+      "expected": "120.6 +/- 2%",
+      "observed": 120.63
+    },
+    {
+      "ticker": "INTC",
+      "check": "rows per year about 252",
+      "passed": true,
+      "expected": "240-256",
+      "observed": 251.6
+    },
+    {
+      "ticker": "INTC",
+      "check": "starts at START_DATE",
+      "passed": true,
+      "expected": "<= 2021-01-01 + 7 days",
+      "observed": "2021-01-04"
+    },
+    {
+      "ticker": "INTC",
+      "check": "no missing trading days",
+      "passed": true,
+      "expected": "max gap <= 4 calendar days",
+      "observed": 4
+    },
+    {
+      "ticker": "INTC",
+      "check": "low <= open,close <= high",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "INTC",
+      "check": "prices positive",
+      "passed": true,
+      "expected": 0,
+      "observed": 0
+    },
+    {
+      "ticker": "INTC",
+      "check": "split-adjusted (no >40% daily move)",
+      "passed": true,
+      "expected": "< 40%",
+      "observed": "28.6%"
+    },
+    {
+      "ticker": "INTC",
+      "check": "known close on 2025-01-02",
+      "passed": true,
+      "expected": "20.2 +/- 2%",
+      "observed": 20.22
+    }
+  ]
+}
